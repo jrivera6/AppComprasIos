@@ -7,12 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E32C32D722AAF576004BC16A /* ProductoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32C32D622AAF576004BC16A /* ProductoModel.swift */; };
+		E33C3BD222B718590053F06F /* ProductosCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33C3BD122B718590053F06F /* ProductosCollection.swift */; };
+		E33C3BD422B71A030053F06F /* ProductosTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33C3BD322B71A030053F06F /* ProductosTableView.swift */; };
+		E33C3BD622B71AF10053F06F /* UltimaCompraCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33C3BD522B71AF10053F06F /* UltimaCompraCell.swift */; };
+		E33C3BD822B71B5C0053F06F /* PromocionesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33C3BD722B71B5C0053F06F /* PromocionesCell.swift */; };
+		E33C3BDA22B71BA50053F06F /* ProductosCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33C3BD922B71BA50053F06F /* ProductosCell.swift */; };
+		E33C3BDC22B748650053F06F /* ProductoArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33C3BDB22B748650053F06F /* ProductoArray.swift */; };
+		E359F1D922B05FE2000051A6 /* beep-07.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E359F1D822B05FE2000051A6 /* beep-07.mp3 */; };
+		E37AF18822B61AFF002E107C /* ProductoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37AF18722B61AFF002E107C /* ProductoTableViewCell.swift */; };
+		E386E70D22A87794007BBB58 /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E386E70C22A87794007BBB58 /* QRViewController.swift */; };
 		E389AF26229DBEA500325834 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E389AF25229DBEA500325834 /* AppDelegate.swift */; };
-		E389AF28229DBEA500325834 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E389AF27229DBEA500325834 /* ViewController.swift */; };
+		E389AF28229DBEA500325834 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E389AF27229DBEA500325834 /* LoginViewController.swift */; };
 		E389AF2B229DBEA500325834 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E389AF29229DBEA500325834 /* Main.storyboard */; };
 		E389AF2E229DBEA500325834 /* AppCompras.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E389AF2C229DBEA500325834 /* AppCompras.xcdatamodeld */; };
-		E389AF30229DBEA600325834 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E389AF2F229DBEA600325834 /* Assets.xcassets */; };
-		E389AF33229DBEA600325834 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E389AF31229DBEA600325834 /* LaunchScreen.storyboard */; };
+		E38F515922B3005E00773E5C /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38F515822B3005E00773E5C /* MenuViewController.swift */; };
+		E38F515D22B3012400773E5C /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38F515C22B3012300773E5C /* Menu.swift */; };
+		E39077B122B7A2A3009E257E /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39077B022B7A2A3009E257E /* LoginTextField.swift */; };
+		E39077B322B7A2BA009E257E /* RegistroTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39077B222B7A2BA009E257E /* RegistroTextField.swift */; };
+		E39077B522B7A847009E257E /* RegistroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39077B422B7A847009E257E /* RegistroViewController.swift */; };
+		E39077B722B7AE3B009E257E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39077B622B7AE3B009E257E /* User.swift */; };
+		E39077B922B7C806009E257E /* Factura.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39077B822B7C806009E257E /* Factura.swift */; };
+		E39077BB22B7CD98009E257E /* DetalleFactura.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39077BA22B7CD98009E257E /* DetalleFactura.swift */; };
+		E39077BD22B7D4EA009E257E /* FacturaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39077BC22B7D4EA009E257E /* FacturaCell.swift */; };
+		E39077BF22B7D525009E257E /* FacturaTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39077BE22B7D525009E257E /* FacturaTableView.swift */; };
+		E39077C122B81713009E257E /* AlertFacturaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39077C022B81713009E257E /* AlertFacturaService.swift */; };
+		E39077C322B817B3009E257E /* FacturaAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39077C222B817B3009E257E /* FacturaAlertViewController.swift */; };
+		E39077C522B83957009E257E /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39077C422B83957009E257E /* Constant.swift */; };
+		E3B5B45322A70BBE007E77C6 /* CarritoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B5B45222A70BBE007E77C6 /* CarritoViewController.swift */; };
+		E3C21A9C22A0B5A7000055DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3C21A9B22A0B5A7000055DC /* Assets.xcassets */; };
+		E3CCB57722B59D1D00478F4D /* CulqiAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CCB57622B59D1D00478F4D /* CulqiAlertViewController.swift */; };
+		E3CCB57922B59FE200478F4D /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CCB57822B59FE200478F4D /* AlertService.swift */; };
+		E3CCB57C22B5B04B00478F4D /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CCB57B22B5B04B00478F4D /* CustomTextField.swift */; };
 		E408A1FF01523B174759E8E9 /* Pods_AppCompras.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45714C7925773F8C1ED5E037 /* Pods_AppCompras.framework */; };
 /* End PBXBuildFile section */
 
@@ -20,14 +46,40 @@
 		45714C7925773F8C1ED5E037 /* Pods_AppCompras.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppCompras.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7971F8F0CC277DF986FADB51 /* Pods-AppCompras.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppCompras.debug.xcconfig"; path = "Target Support Files/Pods-AppCompras/Pods-AppCompras.debug.xcconfig"; sourceTree = "<group>"; };
 		A39C9260B2DFDAB8138520EE /* Pods-AppCompras.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppCompras.release.xcconfig"; path = "Target Support Files/Pods-AppCompras/Pods-AppCompras.release.xcconfig"; sourceTree = "<group>"; };
+		E32C32D622AAF576004BC16A /* ProductoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductoModel.swift; sourceTree = "<group>"; };
+		E33C3BD122B718590053F06F /* ProductosCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductosCollection.swift; sourceTree = "<group>"; };
+		E33C3BD322B71A030053F06F /* ProductosTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductosTableView.swift; sourceTree = "<group>"; };
+		E33C3BD522B71AF10053F06F /* UltimaCompraCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UltimaCompraCell.swift; sourceTree = "<group>"; };
+		E33C3BD722B71B5C0053F06F /* PromocionesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromocionesCell.swift; sourceTree = "<group>"; };
+		E33C3BD922B71BA50053F06F /* ProductosCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductosCell.swift; sourceTree = "<group>"; };
+		E33C3BDB22B748650053F06F /* ProductoArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductoArray.swift; sourceTree = "<group>"; };
+		E359F1D822B05FE2000051A6 /* beep-07.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "beep-07.mp3"; path = "../beep-07.mp3"; sourceTree = "<group>"; };
+		E37AF18722B61AFF002E107C /* ProductoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductoTableViewCell.swift; sourceTree = "<group>"; };
+		E386E70C22A87794007BBB58 /* QRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
 		E389AF22229DBEA500325834 /* AppCompras.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppCompras.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E389AF25229DBEA500325834 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E389AF27229DBEA500325834 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E389AF27229DBEA500325834 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E389AF2A229DBEA500325834 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E389AF2D229DBEA500325834 /* AppCompras.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AppCompras.xcdatamodel; sourceTree = "<group>"; };
-		E389AF2F229DBEA600325834 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E389AF32229DBEA600325834 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E389AF34229DBEA600325834 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E38F515822B3005E00773E5C /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		E38F515C22B3012300773E5C /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		E39077B022B7A2A3009E257E /* LoginTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
+		E39077B222B7A2BA009E257E /* RegistroTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroTextField.swift; sourceTree = "<group>"; };
+		E39077B422B7A847009E257E /* RegistroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroViewController.swift; sourceTree = "<group>"; };
+		E39077B622B7AE3B009E257E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E39077B822B7C806009E257E /* Factura.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factura.swift; sourceTree = "<group>"; };
+		E39077BA22B7CD98009E257E /* DetalleFactura.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleFactura.swift; sourceTree = "<group>"; };
+		E39077BC22B7D4EA009E257E /* FacturaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacturaCell.swift; sourceTree = "<group>"; };
+		E39077BE22B7D525009E257E /* FacturaTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacturaTableView.swift; sourceTree = "<group>"; };
+		E39077C022B81713009E257E /* AlertFacturaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertFacturaService.swift; sourceTree = "<group>"; };
+		E39077C222B817B3009E257E /* FacturaAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacturaAlertViewController.swift; sourceTree = "<group>"; };
+		E39077C422B83957009E257E /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		E3B5B45222A70BBE007E77C6 /* CarritoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarritoViewController.swift; sourceTree = "<group>"; };
+		E3C21A9B22A0B5A7000055DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E3CCB57622B59D1D00478F4D /* CulqiAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CulqiAlertViewController.swift; sourceTree = "<group>"; };
+		E3CCB57822B59FE200478F4D /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
+		E3CCB57B22B5B04B00478F4D /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +100,28 @@
 				45714C7925773F8C1ED5E037 /* Pods_AppCompras.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E32C32D522AAF55A004BC16A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E38F515C22B3012300773E5C /* Menu.swift */,
+				E32C32D622AAF576004BC16A /* ProductoModel.swift */,
+				E33C3BDB22B748650053F06F /* ProductoArray.swift */,
+				E39077B622B7AE3B009E257E /* User.swift */,
+				E39077B822B7C806009E257E /* Factura.swift */,
+				E39077BA22B7CD98009E257E /* DetalleFactura.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E359F1D722B05FE2000051A6 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				E359F1D822B05FE2000051A6 /* beep-07.mp3 */,
+			);
+			name = assets;
+			path = ../../../../Desktop/assets;
 			sourceTree = "<group>";
 		};
 		E389AF19229DBEA500325834 = {
@@ -72,14 +146,51 @@
 			isa = PBXGroup;
 			children = (
 				E389AF25229DBEA500325834 /* AppDelegate.swift */,
-				E389AF27229DBEA500325834 /* ViewController.swift */,
+				E3CCB57A22B5B01300478F4D /* Classes */,
+				E38F515E22B3019700773E5C /* Controllers */,
+				E359F1D722B05FE2000051A6 /* assets */,
+				E32C32D522AAF55A004BC16A /* Models */,
 				E389AF29229DBEA500325834 /* Main.storyboard */,
-				E389AF2F229DBEA600325834 /* Assets.xcassets */,
-				E389AF31229DBEA600325834 /* LaunchScreen.storyboard */,
+				E3C21A9B22A0B5A7000055DC /* Assets.xcassets */,
 				E389AF34229DBEA600325834 /* Info.plist */,
 				E389AF2C229DBEA500325834 /* AppCompras.xcdatamodeld */,
 			);
 			path = AppCompras;
+			sourceTree = "<group>";
+		};
+		E38F515E22B3019700773E5C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E38F515822B3005E00773E5C /* MenuViewController.swift */,
+				E3CCB57622B59D1D00478F4D /* CulqiAlertViewController.swift */,
+				E389AF27229DBEA500325834 /* LoginViewController.swift */,
+				E3B5B45222A70BBE007E77C6 /* CarritoViewController.swift */,
+				E386E70C22A87794007BBB58 /* QRViewController.swift */,
+				E37AF18722B61AFF002E107C /* ProductoTableViewCell.swift */,
+				E33C3BD122B718590053F06F /* ProductosCollection.swift */,
+				E33C3BD322B71A030053F06F /* ProductosTableView.swift */,
+				E33C3BD522B71AF10053F06F /* UltimaCompraCell.swift */,
+				E33C3BD722B71B5C0053F06F /* PromocionesCell.swift */,
+				E33C3BD922B71BA50053F06F /* ProductosCell.swift */,
+				E39077B422B7A847009E257E /* RegistroViewController.swift */,
+				E39077BC22B7D4EA009E257E /* FacturaCell.swift */,
+				E39077BE22B7D525009E257E /* FacturaTableView.swift */,
+				E39077C222B817B3009E257E /* FacturaAlertViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E3CCB57A22B5B01300478F4D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E3CCB57822B59FE200478F4D /* AlertService.swift */,
+				E3CCB57B22B5B04B00478F4D /* CustomTextField.swift */,
+				E39077B022B7A2A3009E257E /* LoginTextField.swift */,
+				E39077B222B7A2BA009E257E /* RegistroTextField.swift */,
+				E39077C022B81713009E257E /* AlertFacturaService.swift */,
+				E39077C422B83957009E257E /* Constant.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		F819D75642461514C6497F00 /* Pods */ = {
@@ -151,8 +262,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E389AF33229DBEA600325834 /* LaunchScreen.storyboard in Resources */,
-				E389AF30229DBEA600325834 /* Assets.xcassets in Resources */,
+				E3C21A9C22A0B5A7000055DC /* Assets.xcassets in Resources */,
+				E359F1D922B05FE2000051A6 /* beep-07.mp3 in Resources */,
 				E389AF2B229DBEA500325834 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,9 +317,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3CCB57C22B5B04B00478F4D /* CustomTextField.swift in Sources */,
 				E389AF2E229DBEA500325834 /* AppCompras.xcdatamodeld in Sources */,
-				E389AF28229DBEA500325834 /* ViewController.swift in Sources */,
+				E389AF28229DBEA500325834 /* LoginViewController.swift in Sources */,
+				E32C32D722AAF576004BC16A /* ProductoModel.swift in Sources */,
+				E39077C322B817B3009E257E /* FacturaAlertViewController.swift in Sources */,
+				E39077BD22B7D4EA009E257E /* FacturaCell.swift in Sources */,
+				E39077B522B7A847009E257E /* RegistroViewController.swift in Sources */,
+				E38F515D22B3012400773E5C /* Menu.swift in Sources */,
+				E33C3BDC22B748650053F06F /* ProductoArray.swift in Sources */,
+				E38F515922B3005E00773E5C /* MenuViewController.swift in Sources */,
+				E39077C522B83957009E257E /* Constant.swift in Sources */,
+				E39077BB22B7CD98009E257E /* DetalleFactura.swift in Sources */,
+				E37AF18822B61AFF002E107C /* ProductoTableViewCell.swift in Sources */,
 				E389AF26229DBEA500325834 /* AppDelegate.swift in Sources */,
+				E39077B722B7AE3B009E257E /* User.swift in Sources */,
+				E39077B122B7A2A3009E257E /* LoginTextField.swift in Sources */,
+				E39077BF22B7D525009E257E /* FacturaTableView.swift in Sources */,
+				E3B5B45322A70BBE007E77C6 /* CarritoViewController.swift in Sources */,
+				E33C3BD622B71AF10053F06F /* UltimaCompraCell.swift in Sources */,
+				E33C3BD422B71A030053F06F /* ProductosTableView.swift in Sources */,
+				E33C3BD822B71B5C0053F06F /* PromocionesCell.swift in Sources */,
+				E39077B322B7A2BA009E257E /* RegistroTextField.swift in Sources */,
+				E33C3BDA22B71BA50053F06F /* ProductosCell.swift in Sources */,
+				E33C3BD222B718590053F06F /* ProductosCollection.swift in Sources */,
+				E39077C122B81713009E257E /* AlertFacturaService.swift in Sources */,
+				E386E70D22A87794007BBB58 /* QRViewController.swift in Sources */,
+				E3CCB57922B59FE200478F4D /* AlertService.swift in Sources */,
+				E3CCB57722B59D1D00478F4D /* CulqiAlertViewController.swift in Sources */,
+				E39077B922B7C806009E257E /* Factura.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,14 +358,6 @@
 				E389AF2A229DBEA500325834 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		E389AF31229DBEA600325834 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E389AF32229DBEA600325834 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

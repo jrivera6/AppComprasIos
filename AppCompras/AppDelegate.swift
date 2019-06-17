@@ -8,17 +8,122 @@
 
 import UIKit
 import CoreData
+import SlideMenuControllerSwift
+import SideMenuSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var mainViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Principal")  as! UITabBarController
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        sideBar()
         return true
+        
     }
+    
+//    func sideBar2(){
+//
+//        window = UIWindow(frame: UIScreen.main.bounds)
+//        window?.makeKeyAndVisible()
+//
+//        let navigationController = UINavigationController()
+//        navigationController.isNavigationBarHidden = true
+//        navigationController.view.backgroundColor = .black
+//
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//
+//        let contentVC = storyboard.instantiateViewController(withIdentifier: "Principal") as! UITabBarController
+//        let menuVC = storyboard.instantiateViewController(withIdentifier: "Menu") as! MenuViewController
+//
+//        contentVC.addLeftBarButtonWithImage(UIImage(named: "ic_menu")!)
+//
+//        menuVC.mainViewController = contentVC
+//
+//        let navController = UINavigationController(rootViewController: contentVC)
+//
+//        let sideMC = SideMenuController(contentViewController: navController, menuViewController: menuVC)
+//
+//        navigationController.viewControllers = [sideMC]
+//
+//        window?.rootViewController = navigationController
+//
+//    }
+    
+    func sideBar(){
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.makeKeyAndVisible()
+        
+        print("en el sidebar")
+        
+        let navigationController = UINavigationController()
+        navigationController.isNavigationBarHidden = true
+        navigationController.view.backgroundColor = .white
+        
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        if UserDefaults.standard.bool(forKey: "isLogged") == true {
+            
+            let leftViewController = storyboard.instantiateViewController(withIdentifier: "Menu") as! MenuViewController
+            
+            
+            
+            
+            mainViewController.addLeftBarButtonWithImage(UIImage(named: "ic_menu")!)
+            mainViewController.navigationItem.title = "Shopper"
+//            mainViewController.navigationItem.setRightBarButton(UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.camera, target: self, action: #selector(AppDelegate.openCamera(_:))), animated: true)
+            
+//            print("en el selector \(#selector(openCamera(_:)))")
+            
+            //        mainViewController.navigationItem.backBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.done, target: self, action: #selector(changeTabWhenBack(_:)) )
+            
+            leftViewController.mainViewController = mainViewController
+            
+            
+            //Settings NavigationController options
+            let navController = UINavigationController(rootViewController: mainViewController)
+            navController.navigationBar.barTintColor = UIColor(red:1.00, green:0.36, blue:0.18, alpha:1.0)
+            navController.navigationBar.tintColor = .white
+            navController.navigationBar.barStyle = .black
+            
+            
+            
+            let slideMenuController = SlideMenuController(mainViewController: navController, leftMenuViewController: leftViewController)
+            navigationController.viewControllers = [slideMenuController]
+            
+        }else{
+            
+            let loginVC = storyboard.instantiateViewController(withIdentifier: "Login") as! LoginViewController
+            
+            navigationController.viewControllers = [loginVC]
+            
+            
+        }
+        
+        window?.rootViewController = navigationController
+        
+    }
+    
+    
+
+    
+//    @objc func openCamera(_ sender: UIBarButtonItem){
+//
+//        print("sender es: \(sender)")
+//
+//
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//
+//        let EscanerQr = storyboard.instantiateViewController(withIdentifier: "Escaner") as! QRViewController
+//        mainViewController.navigationController?.pushViewController(EscanerQr, animated: true)
+//        mainViewController.selectedIndex = 1
+//    }
+    
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
