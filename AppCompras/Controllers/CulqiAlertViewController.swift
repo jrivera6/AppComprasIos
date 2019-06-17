@@ -160,17 +160,17 @@ class CulqiAlertViewController: UIViewController {
     
     @IBAction func btnRealizarPago(_ sender: Any) {
         
-//        if txtNumeroTarjeta.text!.isEmpty || txtVencimiento.text!.isEmpty || txtCVV.text!.isEmpty || txtCorreo.text!.isEmpty{
-//            let alertError = UIAlertController(title: "Error", message: "Falta ingresar datos para la compra", preferredStyle: .alert)
-//
-//            let cerrarAction = UIAlertAction(title: "Cerrar", style: .destructive)
-//
-//            alertError.addAction(cerrarAction)
-//
-//            present(alertError, animated: true, completion: nil)
-//
-//            return
-//        }
+        if txtNumeroTarjeta.text!.isEmpty || txtVencimiento.text!.isEmpty || txtCVV.text!.isEmpty || txtCorreo.text!.isEmpty{
+            let alertError = UIAlertController(title: "Error", message: "Falta ingresar datos para la compra", preferredStyle: .alert)
+
+            let cerrarAction = UIAlertAction(title: "Cerrar", style: .destructive)
+
+            alertError.addAction(cerrarAction)
+
+            present(alertError, animated: true, completion: nil)
+
+            return
+        }
         
         saveFactura()
         
