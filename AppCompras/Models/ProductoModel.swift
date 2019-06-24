@@ -19,4 +19,6 @@ class ProductoModel:EVNetworkingObject {
     public var categoria_id: NSNumber?
     public var codigo: String?
     
+    
+    
 }

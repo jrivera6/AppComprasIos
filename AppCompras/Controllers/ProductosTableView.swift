@@ -23,8 +23,8 @@ class ProductosTableView: UITableView, UITableViewDelegate, UITableViewDataSourc
         self.delegate = self
         self.dataSource = self
         self.reloadData()
-    let url = "\(Constant.API_BASE_URL)/usuario/login"
-        print(" ruta \(url)")
+//    let url = "\(Constant.API_BASE_URL)/usuario/login"
+//        print(" ruta \(url)")
     }
     
     
@@ -105,8 +105,15 @@ class ProductosTableView: UITableView, UITableViewDelegate, UITableViewDataSourc
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
+        let factura = UserDefaults.standard.string(forKey: "factura_id")
+        
         if indexPath.section == 0 {
-            return CGFloat(110)
+            if factura == nil{
+                return CGFloat(0)
+            }else{
+                return CGFloat(110)
+            }
+            
         }else{
             return CGFloat(100)
         }

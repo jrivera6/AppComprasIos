@@ -10,7 +10,7 @@ import EVReflection
 
 class Factura: EVNetworkingObject{
     
-    public var id: NSNumber?
+    public var id_factura: NSNumber?
     public var fecha_pago: String?
     public var total_pago: String?
     public var usuario_id: String?

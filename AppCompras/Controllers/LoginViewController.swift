@@ -122,7 +122,7 @@ class LoginViewController: UIViewController {
                 if response.response?.statusCode == 200{
                     self.user = response.result.value!
                     
-                    print("id usuario en el login \(self.user!.id_usuario!)")
+                    print("id usuario en el login \(String(describing: self.user!.id_usuario))")
                     
                     UserDefaults.standard.set(String(self.user!.id_usuario! as! Int), forKey: "user_id")
                     UserDefaults.standard.set(self.user!.nombre, forKey: "nombre_user")

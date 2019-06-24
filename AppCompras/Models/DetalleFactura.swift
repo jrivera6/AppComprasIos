@@ -10,7 +10,7 @@ import EVReflection
 
 class DetalleFactura: EVNetworkingObject{
     
-    public var id: NSNumber?
+    public var id_detalle: NSNumber?
     public var id_factura: String?
     public var id_producto: String?
     public var cantidad: String?

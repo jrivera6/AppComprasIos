@@ -28,7 +28,7 @@ class QRViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate
         super.viewDidLoad()
 
 //        guardarProductoCarrito(codigoQR: "123456789")
-        guardarProductoCarrito(codigoQR: "123789456")
+//        guardarProductoCarrito(codigoQR: "7702004000079")
         
 //        self.navigationController?.pushViewController(vc, animated: true)
         
@@ -203,7 +203,13 @@ class QRViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate
         }
         
         self.captureSession?.stopRunning()
-        self.navigationController?.popViewController(animated: true)
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) { // Change `2.0` to the desired number of seconds.
+            // Code you want to be delayed
+            
+            self.navigationController?.popViewController(animated: true)
+        }
+        
     }
     
         

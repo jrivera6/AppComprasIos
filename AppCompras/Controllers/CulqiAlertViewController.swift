@@ -59,10 +59,10 @@ class CulqiAlertViewController: UIViewController {
         for p in productosCarrito{
             print("en el \(p.id_producto)")
             
-            UserDefaults.standard.set(self.factura!.id!, forKey: "factura_id")
+            UserDefaults.standard.set(self.factura!.id_factura!, forKey: "factura_id")
             
             let params: Parameters = [
-                "id_factura": String(self.factura?.id! as! Int),
+                "id_factura": String(self.factura?.id_factura! as! Int),
                 "id_producto": String(p.id_producto),
                 "cantidad": "1",
                 "estado": "vacio",
@@ -112,7 +112,7 @@ class CulqiAlertViewController: UIViewController {
         let tipo_factura = "Virtual"
         
         //Codigo de la factura
-        let codigo_factura = "\(fecha_actual)_\(Int.random(in: 0..<6))"
+        let codigo_factura = "FC-\(date)_\(Int.random(in: 0..<20))"
         
         //Tipo de tarjeta
         let tipo_tarjeta = "Debito"
@@ -142,6 +142,8 @@ class CulqiAlertViewController: UIViewController {
             
             if response.result.isSuccess{
                 
+                
+                
                 if response.response?.statusCode == 200{
                     self.factura = response.result.value!
                     self.saveDetalleFactura()
@@ -160,17 +162,17 @@ class CulqiAlertViewController: UIViewController {
     
     @IBAction func btnRealizarPago(_ sender: Any) {
         
-        if txtNumeroTarjeta.text!.isEmpty || txtVencimiento.text!.isEmpty || txtCVV.text!.isEmpty || txtCorreo.text!.isEmpty{
-            let alertError = UIAlertController(title: "Error", message: "Falta ingresar datos para la compra", preferredStyle: .alert)
-
-            let cerrarAction = UIAlertAction(title: "Cerrar", style: .destructive)
-
-            alertError.addAction(cerrarAction)
-
-            present(alertError, animated: true, completion: nil)
-
-            return
-        }
+//        if txtNumeroTarjeta.text!.isEmpty || txtVencimiento.text!.isEmpty || txtCVV.text!.isEmpty || txtCorreo.text!.isEmpty{
+//            let alertError = UIAlertController(title: "Error", message: "Falta ingresar datos para la compra", preferredStyle: .alert)
+//
+//            let cerrarAction = UIAlertAction(title: "Cerrar", style: .destructive)
+//
+//            alertError.addAction(cerrarAction)
+//
+//            present(alertError, animated: true, completion: nil)
+//
+//            return
+//        }
         
         saveFactura()
         

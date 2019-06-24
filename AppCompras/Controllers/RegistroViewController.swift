@@ -31,6 +31,7 @@ class RegistroViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         print("registro")
 
 //        let url = "https://api2-marco121942.c9users.io/usuario/crear"
@@ -51,6 +52,7 @@ class RegistroViewController: UIViewController {
 //            print("data \(response.result.value!)")
 //        }
         
+        hideKeyboardWhenTappedAround()
         
     }
     
@@ -163,6 +165,16 @@ class RegistroViewController: UIViewController {
         
         dismiss(animated: true, completion: nil)
         
+    }
+    
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
     
     

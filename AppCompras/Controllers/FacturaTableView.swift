@@ -22,6 +22,10 @@ class FacturaTableView: UIViewController, UITableViewDelegate, UITableViewDataSo
         getFacturas()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        getFacturas()
+    }
+    
     
     func getFacturas(){
         
@@ -57,7 +61,7 @@ class FacturaTableView: UIViewController, UITableViewDelegate, UITableViewDataSo
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let factura = facturas[indexPath.row]
         
-        print("facturaaa \(factura)")
+//        print("facturaaa \(factura)")
         
         performSegue(withIdentifier: "facturaSegue", sender: factura)
     }

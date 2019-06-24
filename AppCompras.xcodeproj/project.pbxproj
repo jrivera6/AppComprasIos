@@ -14,6 +14,7 @@
 		E33C3BD822B71B5C0053F06F /* PromocionesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33C3BD722B71B5C0053F06F /* PromocionesCell.swift */; };
 		E33C3BDA22B71BA50053F06F /* ProductosCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33C3BD922B71BA50053F06F /* ProductosCell.swift */; };
 		E33C3BDC22B748650053F06F /* ProductoArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33C3BDB22B748650053F06F /* ProductoArray.swift */; };
+		E348471E22C04C5600FABDA2 /* UltimosProductos.swift in Sources */ = {isa = PBXBuildFile; fileRef = E348471D22C04C5600FABDA2 /* UltimosProductos.swift */; };
 		E359F1D922B05FE2000051A6 /* beep-07.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E359F1D822B05FE2000051A6 /* beep-07.mp3 */; };
 		E37AF18822B61AFF002E107C /* ProductoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37AF18722B61AFF002E107C /* ProductoTableViewCell.swift */; };
 		E386E70D22A87794007BBB58 /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E386E70C22A87794007BBB58 /* QRViewController.swift */; };
@@ -53,6 +54,7 @@
 		E33C3BD722B71B5C0053F06F /* PromocionesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromocionesCell.swift; sourceTree = "<group>"; };
 		E33C3BD922B71BA50053F06F /* ProductosCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductosCell.swift; sourceTree = "<group>"; };
 		E33C3BDB22B748650053F06F /* ProductoArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductoArray.swift; sourceTree = "<group>"; };
+		E348471D22C04C5600FABDA2 /* UltimosProductos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UltimosProductos.swift; sourceTree = "<group>"; };
 		E359F1D822B05FE2000051A6 /* beep-07.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "beep-07.mp3"; path = "../beep-07.mp3"; sourceTree = "<group>"; };
 		E37AF18722B61AFF002E107C /* ProductoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductoTableViewCell.swift; sourceTree = "<group>"; };
 		E386E70C22A87794007BBB58 /* QRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				E39077B622B7AE3B009E257E /* User.swift */,
 				E39077B822B7C806009E257E /* Factura.swift */,
 				E39077BA22B7CD98009E257E /* DetalleFactura.swift */,
+				E348471D22C04C5600FABDA2 /* UltimosProductos.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 				E39077B522B7A847009E257E /* RegistroViewController.swift in Sources */,
 				E38F515D22B3012400773E5C /* Menu.swift in Sources */,
 				E33C3BDC22B748650053F06F /* ProductoArray.swift in Sources */,
+				E348471E22C04C5600FABDA2 /* UltimosProductos.swift in Sources */,
 				E38F515922B3005E00773E5C /* MenuViewController.swift in Sources */,
 				E39077C522B83957009E257E /* Constant.swift in Sources */,
 				E39077BB22B7CD98009E257E /* DetalleFactura.swift in Sources */,

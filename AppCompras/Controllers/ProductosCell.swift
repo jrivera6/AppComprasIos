@@ -14,12 +14,13 @@ class ProductosCell: UICollectionViewCell {
     @IBOutlet weak var imgProducto: UIImageView!
     @IBOutlet weak var txtProducto: UILabel!
     
-    func setUltimosProductos(producto: ProductoModel){
+    func setUltimosProductos(producto: UltimosProductos){
         
-        imgProducto.sd_setImage(with: URL(string: producto.imagen!)!, placeholderImage: UIImage(named: "thumbnailUrl"))
+        imgProducto.sd_setImage(with: URL(string: producto.imagen)!, placeholderImage: UIImage(named: "thumbnailUrl"))
         
-        txtProducto.text = producto.nombre_producto!
+        txtProducto.text = producto.nombre
         
     }
+    
     
 }
